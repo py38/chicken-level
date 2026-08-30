@@ -96,7 +96,7 @@ body::before{
   padding:.6rem clamp(1rem,4vw,3rem);
   box-shadow:0 6px 30px rgba(0,0,0,.35);
 }
-.nav__logo{height:44px;width:auto;border-radius:10px;transition:transform .3s}
+.nav__logo{height:40px;width:auto;filter:drop-shadow(0 4px 10px rgba(0,0,0,.35));transition:transform .3s}
 .nav__brand:hover .nav__logo{transform:scale(1.06) rotate(-3deg)}
 .nav__links{display:flex;gap:2rem}
 .nav__links a{
@@ -395,7 +395,7 @@ h2 em{
 
 /* ============ FOOTER ============ */
 .footer{text-align:center;padding:clamp(3rem,6vw,4.5rem) 1.5rem;border-top:1px solid rgba(255,255,255,.1)}
-.footer__logo{height:60px;width:auto;border-radius:14px;margin:0 auto 1.2rem}
+.footer__logo{height:56px;width:auto;filter:drop-shadow(0 6px 14px rgba(0,0,0,.4));margin:0 auto 1.2rem}
 .footer__slogan{font-family:var(--font-display);font-weight:700;font-size:1.4rem;color:var(--orange-light)}
 .footer__meta{opacity:.85;margin-top:.6rem}
 .footer__credits{opacity:.5;font-size:.85rem;margin-top:1.4rem}
