@@ -227,7 +227,10 @@
         <span class="stars">★★★★★</span>
         <span class="rating__count">104 avis Google</span>
       </div>
-      <a href="https://www.google.com/maps/search/?api=1&query=Chicken+Level+150+Rue+de+Vesle+51100+Reims" target="_blank" rel="noopener" class="btn btn--ghost">Voir sur la carte</a>
+      <div class="infos__btns">
+        <a href="https://www.google.com/maps/search/?api=1&query=Chicken+Level+150+Rue+de+Vesle+51100+Reims" target="_blank" rel="noopener" class="btn btn--ghost">Voir sur la carte</a>
+        <button type="button" class="btn btn--primary" data-open-review>Laisser un avis ⭐</button>
+      </div>
     </div>
   </div>
 </section>
@@ -252,6 +255,51 @@
   <p class="footer__meta">150 Rue de Vesle, 51100 Reims · Ouvert 7j/7</p>
   <p class="footer__credits">© <span id="year"></span> Chicken Level — Tous droits réservés.</p>
 </footer>
+
+<!-- ============ MODAL AVIS (funnel) ============ -->
+<div class="review" id="review" aria-hidden="true">
+  <div class="review__backdrop" data-close-review></div>
+  <div class="review__box" role="dialog" aria-modal="true" aria-labelledby="review-title">
+    <button class="review__close" type="button" data-close-review aria-label="Fermer">×</button>
+
+    <!-- Étape 1 : la note -->
+    <div class="review__step" data-step="rate">
+      <img src="assets/logo-texte.png" alt="Chicken Level" class="review__logo">
+      <h3 id="review-title">Votre expérience ?</h3>
+      <p class="review__sub">Notez votre passage chez Chicken Level.</p>
+      <div class="stars-input" role="radiogroup" aria-label="Note de 1 à 5 étoiles">
+        <button type="button" class="star" data-rate="1" aria-label="1 étoile">★</button>
+        <button type="button" class="star" data-rate="2" aria-label="2 étoiles">★</button>
+        <button type="button" class="star" data-rate="3" aria-label="3 étoiles">★</button>
+        <button type="button" class="star" data-rate="4" aria-label="4 étoiles">★</button>
+        <button type="button" class="star" data-rate="5" aria-label="5 étoiles">★</button>
+      </div>
+      <p class="stars-hint" data-stars-hint>Touchez une étoile</p>
+    </div>
+
+    <!-- Étape 2a : 5 étoiles → Google -->
+    <div class="review__step" data-step="happy" hidden>
+      <div class="review__emoji">🎉</div>
+      <h3>Merci énormément !</h3>
+      <p class="review__sub">Ça nous ferait super plaisir que vous partagiez ça sur Google. Un clic suffit 🙏</p>
+      <a href="#" class="btn btn--primary" data-google-review target="_blank" rel="noopener">Publier mon avis sur Google</a>
+      <button type="button" class="review__later" data-close-review>Plus tard</button>
+    </div>
+
+    <!-- Étape 2b : < 5 étoiles → retour privé -->
+    <div class="review__step" data-step="sad" hidden>
+      <div class="review__emoji">🙏</div>
+      <h3>Merci pour votre retour</h3>
+      <p class="review__sub">Qu'est-ce qui n'a pas été ? Votre message nous arrive directement, en privé, pour qu'on s'améliore.</p>
+      <textarea class="review__textarea" data-feedback placeholder="Dites-nous tout…" rows="4"></textarea>
+      <div class="review__send">
+        <button type="button" class="btn btn--primary" data-send="whatsapp">Envoyer par WhatsApp</button>
+        <button type="button" class="btn btn--ghost" data-send="email">Envoyer par e-mail</button>
+      </div>
+      <p class="review__private">🔒 Ce retour est privé et n'est pas publié.</p>
+    </div>
+  </div>
+</div>
 
 <script src="script.js"></script>
 </body>
