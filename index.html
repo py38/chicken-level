@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chicken Level — Le haut niveau du poulet · Reims</title>
+<meta name="description" content="Chicken Level, le haut niveau du poulet à Reims. Poulet grillé & accompagnements, à emporter & livraison. Petit prix, ouvert 7j/7.">
+<link rel="icon" href="assets/logo.jpeg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- flammes / particules de fond global -->
+<div class="bg-embers" aria-hidden="true"></div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <a href="#hero" class="nav__brand">
+    <img src="assets/logo.jpeg" alt="Chicken Level" class="nav__logo">
+  </a>
+  <nav class="nav__links">
+    <a href="#concept">Le Concept</a>
+    <a href="#menu">Menu</a>
+    <a href="#festin">Le Festin</a>
+    <a href="#infos">Infos</a>
+  </nav>
+  <a href="#commander" class="btn btn--nav">Commander 🔥</a>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero">
+  <div class="hero__glow" aria-hidden="true"></div>
+
+  <div class="hero__inner">
+    <p class="hero__eyebrow" data-reveal>🍗 Fast-food de poulet · Reims 🔥</p>
+
+    <img src="assets/logo.jpeg" alt="Chicken Level" class="hero__logo">
+
+    <p class="hero__slogan" data-reveal>Le haut niveau du poulet.</p>
+
+    <div class="hero__cta" data-reveal>
+      <a href="#commander" class="btn btn--primary">Commander maintenant</a>
+      <a href="#menu" class="btn btn--ghost">Voir le menu</a>
+    </div>
+
+    <div class="hero__stats" data-reveal>
+      <div class="stat"><strong>4,9</strong><span>★ · 104 avis</span></div>
+      <div class="stat"><strong>7j/7</strong><span>Ouvert</span></div>
+      <div class="stat"><strong>10€</strong><span>Un vrai festin</span></div>
+    </div>
+  </div>
+
+  <div class="hero__scroll" aria-hidden="true">
+    <span>scroll</span>
+    <div class="hero__scroll-line"></div>
+  </div>
+</section>
+
+<!-- ============ BANDEAU DÉFILANT ============ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <span>POULET GRILLÉ 🔥</span><span>À EMPORTER 🍗</span><span>LIVRAISON 🛵</span><span>PETIT PRIX 💥</span><span>OUVERT 7J/7 ⚡</span>
+    <span>POULET GRILLÉ 🔥</span><span>À EMPORTER 🍗</span><span>LIVRAISON 🛵</span><span>PETIT PRIX 💥</span><span>OUVERT 7J/7 ⚡</span>
+  </div>
+</div>
+
+<!-- ============ CONCEPT : CHOISIS TON LEVEL ============ -->
+<section class="concept" id="concept">
+  <div class="section-head" data-reveal>
+    <span class="tag">Choisis ton level</span>
+    <h2>Monte en <em>niveau</em>.</h2>
+    <p class="lede">Un menu à <strong>7,50 €</strong> : ton level + 1 accompagnement + une boisson. À toi de jouer.</p>
+  </div>
+
+  <div class="levels">
+    <article class="level" data-reveal>
+      <div class="level__num">01</div>
+      <h3>Level 1</h3>
+      <p>2 saucisses</p>
+    </article>
+    <article class="level" data-reveal>
+      <div class="level__num">02</div>
+      <h3>Level 2</h3>
+      <p>3 pilons</p>
+    </article>
+    <article class="level" data-reveal>
+      <div class="level__num">03</div>
+      <h3>Level 3</h3>
+      <p>1 cuisse</p>
+    </article>
+    <article class="level level--max" data-reveal>
+      <div class="level__num">04</div>
+      <h3>Level 4</h3>
+      <p>1 donut poulet</p>
+      <span class="level__badge">MAX 🔥</span>
+    </article>
+  </div>
+  <p class="concept__price" data-reveal><span>7,50 €</span> le menu complet</p>
+</section>
+
+<!-- ============ MENU ============ -->
+<section class="menu" id="menu">
+  <div class="section-head" data-reveal>
+    <span class="tag">La carte</span>
+    <h2>Le <em>menu</em>.</h2>
+    <p class="lede">Grillé, croustillant, servi chaud. Comme il faut.</p>
+  </div>
+
+  <div class="menu__grid">
+    <div class="menu-card menu-card--wide" data-reveal>
+      <h3>🍗 Le poulet</h3>
+      <ul class="price-list">
+        <li><span>Demi poulet</span><b>5 €</b></li>
+        <li><span>Poulet entier</span><b>9 €</b></li>
+      </ul>
+    </div>
+
+    <div class="menu-card" data-reveal>
+      <h3>🌭 Saucisse</h3>
+      <ul class="price-list">
+        <li><span>1 pièce</span><b>2 €</b></li>
+        <li><span>3 pièces</span><b>5,50 €</b></li>
+      </ul>
+    </div>
+
+    <div class="menu-card" data-reveal>
+      <h3>🍗 Pilon</h3>
+      <ul class="price-list">
+        <li><span>1 pièce</span><b>1,15 €</b></li>
+        <li><span>2 pièces</span><b>3 €</b></li>
+      </ul>
+    </div>
+
+    <div class="menu-card" data-reveal>
+      <h3>🍖 Cuisse</h3>
+      <ul class="price-list">
+        <li><span>1 pièce</span><b>3 €</b></li>
+        <li><span>3 pièces</span><b>7,50 €</b></li>
+      </ul>
+    </div>
+
+    <div class="menu-card" data-reveal>
+      <h3>🍩 Donuts poulet & fromage</h3>
+      <ul class="price-list">
+        <li><span>1 pièce</span><b>2,50 €</b></li>
+        <li><span>3 pièces</span><b>6 €</b></li>
+      </ul>
+    </div>
+
+    <div class="menu-card menu-card--accent" data-reveal>
+      <h3>🍚 Accompagnements</h3>
+      <p class="menu-card__note">Tous à 3,50 €</p>
+      <div class="chips">
+        <span>Level Rice</span><span>Pommes de terre</span><span>Banane Alloco</span><span>Level Pasta</span>
+      </div>
+    </div>
+
+    <div class="menu-card" data-reveal>
+      <h3>🥤 Bonus</h3>
+      <ul class="price-list">
+        <li><span>Canette</span><b>1,50 €</b></li>
+        <li><span>Bissap</span><b>2,50 €</b></li>
+        <li><span>Tiramisu</span><b>3 €</b></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FESTIN / VIDÉO ============ -->
+<section class="festin" id="festin">
+  <div class="festin__text" data-reveal>
+    <span class="tag">L'offre qui fait plaisir</span>
+    <h2>Quand <em>10 €</em> suffisent pour un vrai festin.</h2>
+    <p class="lede">Du poulet plein la barquette, des accompagnements généreux, un petit prix. Le haut niveau, sans se ruiner.</p>
+    <a href="#commander" class="btn btn--primary">J'en profite</a>
+  </div>
+  <div class="festin__video" data-reveal>
+    <video src="assets/festin.mp4" autoplay muted loop playsinline preload="metadata"></video>
+    <div class="festin__video-ring" aria-hidden="true"></div>
+  </div>
+</section>
+
+<!-- ============ GALERIE ============ -->
+<section class="gallery">
+  <div class="section-head" data-reveal>
+    <span class="tag">En cuisine</span>
+    <h2>Servi <em>chaud</em>, comme il faut.</h2>
+  </div>
+  <div class="gallery__grid">
+    <figure class="gallery__item gallery__item--tall" data-reveal>
+      <img src="assets/pilons.jpg" alt="Pilons de poulet grillés" loading="lazy">
+    </figure>
+    <figure class="gallery__item" data-reveal>
+      <img src="assets/service-1.jpg" alt="Service au comptoir Chicken Level" loading="lazy">
+    </figure>
+    <figure class="gallery__item" data-reveal>
+      <img src="assets/service-2.jpg" alt="Poulet rôti à emporter" loading="lazy">
+    </figure>
+  </div>
+</section>
+
+<!-- ============ INFOS / HORAIRES ============ -->
+<section class="infos" id="infos">
+  <div class="infos__grid">
+    <div class="infos__col" data-reveal>
+      <span class="tag">Nos horaires</span>
+      <h2>Du <em>lundi</em> au <em>dimanche</em>.</h2>
+      <ul class="hours">
+        <li><span>Lundi — Jeudi</span><b>11h30–15h00 · 18h00–22h30</b></li>
+        <li><span>Vendredi</span><b>15h30–23h00</b></li>
+        <li><span>Samedi</span><b>11h30–23h00</b></li>
+        <li><span>Dimanche</span><b>18h00–22h30</b></li>
+      </ul>
+    </div>
+
+    <div class="infos__col" data-reveal>
+      <span class="tag">Nous trouver</span>
+      <h2>À <em>Reims</em>.</h2>
+      <p class="address">
+        150 Rue de Vesle<br>51100 Reims
+      </p>
+      <div class="rating">
+        <strong>4,9</strong>
+        <span class="stars">★★★★★</span>
+        <span class="rating__count">104 avis Google</span>
+      </div>
+      <a href="https://www.google.com/maps/search/?api=1&query=Chicken+Level+150+Rue+de+Vesle+51100+Reims" target="_blank" rel="noopener" class="btn btn--ghost">Voir sur la carte</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COMMANDER / CTA ============ -->
+<section class="commander" id="commander">
+  <div class="commander__inner" data-reveal>
+    <span class="tag">Passe au niveau supérieur</span>
+    <h2>Prêt à <em>commander</em> ?</h2>
+    <p class="lede">À emporter au 150 rue de Vesle, ou livré chez toi.</p>
+    <div class="commander__btns">
+      <a href="https://www.ubereats.com/fr/store/chicken-level" target="_blank" rel="noopener" class="btn btn--primary">Uber Eats</a>
+      <a href="https://deliveroo.fr/fr/menu/reims/chicken-level" target="_blank" rel="noopener" class="btn btn--primary">Deliveroo</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <img src="assets/logo.jpeg" alt="Chicken Level" class="footer__logo">
+  <p class="footer__slogan">Le haut niveau du poulet. 🔥</p>
+  <p class="footer__meta">150 Rue de Vesle, 51100 Reims · Ouvert 7j/7</p>
+  <p class="footer__credits">© <span id="year"></span> Chicken Level — Tous droits réservés.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
